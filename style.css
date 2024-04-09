@@ -26,7 +26,7 @@ p {
   text-align: center;
 }
 img {
-  margin: 2em;
+  margin: 1em;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -50,6 +50,9 @@ img {
   max-width: 400px;
   padding: 10px;
   width: 400px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
 }
 /* img {
   height: 350px;
@@ -57,3 +60,21 @@ img {
   margin-left: auto;
   margin-right: auto;
 } */
+
+#darkmode-icon {
+  position: fixed;
+  width: 3em;
+  height: 3em;
+  bottom: 30px;
+  right: 40px;
+  background-color: rgb(212, 212, 212);
+  color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  cursor: pointer;
+}
+.dark-mode{
+  background-color: "#0f0e17;
+  
+}
