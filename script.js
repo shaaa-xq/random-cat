@@ -12,31 +12,15 @@ btn.addEventListener("click", function () {
 });
 
 // dark mode theme
-const toggle = document.getElementById("darkmode-icon");
-const body = document.querySelector("body");
-const header = document.getElementsByClassName("header")[0];
-const hello = document.querySelector("div.container h2");
-const about = document.querySelector("div.container p");
-const border = document.querySelector("div.car-name");
+const toggle = document.getElementById("toggle");
+const border = document.getElementsByClassName("car-name")[0];
 
 toggle.addEventListener("click", function () {
-  desc.style.color = "#fffffe";
-  body.style.backgroundColor = "#0f0e17";
-  header.style.color = "#fffffe";
-  hello.style.color = "#fffffe";
-  about.style.color = "#a7a9be";
-  border.style.border = "1px solid #fffffe";
-  btn.style.backgroundColor = "#ff8906";
-  btn.style.color = "#fffffe";
+  const body = document.getElementsByTagName("body")[0];
+  body.classList.toggle("dark-mode");
+  body.classList.toggle("light-mode");
+  btn.classList.toggle("dark-mode-btn");
+  btn.classList.toggle("light-mode-btn");
+  border.classList.toggle("name-dark");
+  border.classList.toggle("name-light");
 });
-
-// function darkMode(){
-//   desc.style.color = "#fffffe";
-//   body.style.backgroundColor = "#0f0e17";
-//   header.style.color = "#fffffe";
-//   hello.style.color = "#fffffe";
-//   about.style.color = "#a7a9be";
-//   border.style.border = "1px solid #fffffe";
-//   btn.style.backgroundColor = "#ff8906";
-//   btn.style.color = "#fffffe";
-// }
